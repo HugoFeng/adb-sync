@@ -4,6 +4,12 @@ adb-sync
 adb-sync is a tool to synchronize files between a PC and an Android device
 using the ADB (Android Debug Bridge).
 
+New Feature
+===========
+
+* Add support for Windows Command Lines
+
+
 Related Projects
 ================
 
@@ -44,7 +50,7 @@ On your Android device:
 * Go to "Developer Options".
 * Enable "USB Debugging".
 
-PC Side
+Desktop Side (Mac OSX or Linux)
 -------
 
 * Install the [Android SDK](http://developer.android.com/sdk/index.html) (the
@@ -59,6 +65,16 @@ PC Side
 * `cd adb-sync`
 * Copy or symlink the adb-sync script somewhere in your PATH. For example:
   `cp adb-sync /usr/local/bin/`
+  
+Desktop Side (Windows)
+------------
+
+* Download zip file from Github, extract to a local folder, e.g `C:/adb-sync/`
+* Add this path to your system evironment variable `PATH`
+* Make sure you have `python` installed, and have `python.exe` in your `PATH` (Try running python in your cmd window)
+* In case your program is not put under `C:/adb-sync/` directory, in the folder where you put it, right click on file `adb-sync.bat` and choose edit. Then change the path to the directory where you put the program.
+* Open a new cmd window, run `adb-sync` and it should work.
+
 
 Usage
 =====
