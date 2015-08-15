@@ -1,0 +1,1 @@
+python.exe C:/adb-sync/adb-sync %*
